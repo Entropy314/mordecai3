@@ -13,7 +13,7 @@ logger.addHandler(logging.NullHandler())
 
 def make_conn():
     kwargs = dict(
-        hosts=['localhost'],
+        hosts=['localhost', 'elasticsearch'],
         port=9200,
         use_ssl=False,
     )
@@ -23,7 +23,7 @@ def make_conn():
 
 def setup_es():
     kwargs = dict(
-        hosts=['localhost'],
+        hosts=['localhost', 'elasticsearch'],
         port=9200,
         use_ssl=False,
     )
